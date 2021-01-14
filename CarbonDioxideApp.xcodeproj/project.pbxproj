@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAC391B925B0D1AA00945C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC391B825B0D1AA00945C13 /* AppDelegate.swift */; };
+		BAC391BB25B0D1AA00945C13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC391BA25B0D1AA00945C13 /* SceneDelegate.swift */; };
+		BAC391BD25B0D1AA00945C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC391BC25B0D1AA00945C13 /* ViewController.swift */; };
+		BAC391C025B0D1AA00945C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC391BE25B0D1AA00945C13 /* Main.storyboard */; };
+		BAC391C225B0D1AB00945C13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC391C125B0D1AB00945C13 /* Assets.xcassets */; };
+		BAC391C525B0D1AB00945C13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC391C325B0D1AB00945C13 /* LaunchScreen.storyboard */; };
+		BAC391D025B0D1AB00945C13 /* CarbonDioxideAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC391CF25B0D1AB00945C13 /* CarbonDioxideAppTests.swift */; };
+		BAC391DB25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC391DA25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAC391CC25B0D1AB00945C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAC391AD25B0D1AA00945C13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAC391B425B0D1AA00945C13;
+			remoteInfo = CarbonDioxideApp;
+		};
+		BAC391D725B0D1AB00945C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAC391AD25B0D1AA00945C13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAC391B425B0D1AA00945C13;
+			remoteInfo = CarbonDioxideApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BAC391B525B0D1AA00945C13 /* CarbonDioxideApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarbonDioxideApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC391B825B0D1AA00945C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAC391BA25B0D1AA00945C13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BAC391BC25B0D1AA00945C13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAC391BF25B0D1AA00945C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAC391C125B0D1AB00945C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAC391C425B0D1AB00945C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAC391C625B0D1AB00945C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAC391CB25B0D1AB00945C13 /* CarbonDioxideAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarbonDioxideAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC391CF25B0D1AB00945C13 /* CarbonDioxideAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonDioxideAppTests.swift; sourceTree = "<group>"; };
+		BAC391D125B0D1AB00945C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAC391D625B0D1AB00945C13 /* CarbonDioxideAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarbonDioxideAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC391DA25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonDioxideAppUITests.swift; sourceTree = "<group>"; };
+		BAC391DC25B0D1AB00945C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAC391B225B0D1AA00945C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC391C825B0D1AB00945C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC391D325B0D1AB00945C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAC391AC25B0D1AA00945C13 = {
+			isa = PBXGroup;
+			children = (
+				BAC391B725B0D1AA00945C13 /* CarbonDioxideApp */,
+				BAC391CE25B0D1AB00945C13 /* CarbonDioxideAppTests */,
+				BAC391D925B0D1AB00945C13 /* CarbonDioxideAppUITests */,
+				BAC391B625B0D1AA00945C13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAC391B625B0D1AA00945C13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAC391B525B0D1AA00945C13 /* CarbonDioxideApp.app */,
+				BAC391CB25B0D1AB00945C13 /* CarbonDioxideAppTests.xctest */,
+				BAC391D625B0D1AB00945C13 /* CarbonDioxideAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAC391B725B0D1AA00945C13 /* CarbonDioxideApp */ = {
+			isa = PBXGroup;
+			children = (
+				BAC391B825B0D1AA00945C13 /* AppDelegate.swift */,
+				BAC391BA25B0D1AA00945C13 /* SceneDelegate.swift */,
+				BAC391BC25B0D1AA00945C13 /* ViewController.swift */,
+				BAC391BE25B0D1AA00945C13 /* Main.storyboard */,
+				BAC391C125B0D1AB00945C13 /* Assets.xcassets */,
+				BAC391C325B0D1AB00945C13 /* LaunchScreen.storyboard */,
+				BAC391C625B0D1AB00945C13 /* Info.plist */,
+			);
+			path = CarbonDioxideApp;
+			sourceTree = "<group>";
+		};
+		BAC391CE25B0D1AB00945C13 /* CarbonDioxideAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAC391CF25B0D1AB00945C13 /* CarbonDioxideAppTests.swift */,
+				BAC391D125B0D1AB00945C13 /* Info.plist */,
+			);
+			path = CarbonDioxideAppTests;
+			sourceTree = "<group>";
+		};
+		BAC391D925B0D1AB00945C13 /* CarbonDioxideAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BAC391DA25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift */,
+				BAC391DC25B0D1AB00945C13 /* Info.plist */,
+			);
+			path = CarbonDioxideAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAC391B425B0D1AA00945C13 /* CarbonDioxideApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC391DF25B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CarbonDioxideApp" */;
+			buildPhases = (
+				BAC391B125B0D1AA00945C13 /* Sources */,
+				BAC391B225B0D1AA00945C13 /* Frameworks */,
+				BAC391B325B0D1AA00945C13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarbonDioxideApp;
+			productName = CarbonDioxideApp;
+			productReference = BAC391B525B0D1AA00945C13 /* CarbonDioxideApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAC391CA25B0D1AB00945C13 /* CarbonDioxideAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC391E225B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CarbonDioxideAppTests" */;
+			buildPhases = (
+				BAC391C725B0D1AB00945C13 /* Sources */,
+				BAC391C825B0D1AB00945C13 /* Frameworks */,
+				BAC391C925B0D1AB00945C13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAC391CD25B0D1AB00945C13 /* PBXTargetDependency */,
+			);
+			name = CarbonDioxideAppTests;
+			productName = CarbonDioxideAppTests;
+			productReference = BAC391CB25B0D1AB00945C13 /* CarbonDioxideAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAC391D525B0D1AB00945C13 /* CarbonDioxideAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC391E525B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CarbonDioxideAppUITests" */;
+			buildPhases = (
+				BAC391D225B0D1AB00945C13 /* Sources */,
+				BAC391D325B0D1AB00945C13 /* Frameworks */,
+				BAC391D425B0D1AB00945C13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAC391D825B0D1AB00945C13 /* PBXTargetDependency */,
+			);
+			name = CarbonDioxideAppUITests;
+			productName = CarbonDioxideAppUITests;
+			productReference = BAC391D625B0D1AB00945C13 /* CarbonDioxideAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAC391AD25B0D1AA00945C13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					BAC391B425B0D1AA00945C13 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					BAC391CA25B0D1AB00945C13 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = BAC391B425B0D1AA00945C13;
+					};
+					BAC391D525B0D1AB00945C13 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = BAC391B425B0D1AA00945C13;
+					};
+				};
+			};
+			buildConfigurationList = BAC391B025B0D1AA00945C13 /* Build configuration list for PBXProject "CarbonDioxideApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAC391AC25B0D1AA00945C13;
+			productRefGroup = BAC391B625B0D1AA00945C13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAC391B425B0D1AA00945C13 /* CarbonDioxideApp */,
+				BAC391CA25B0D1AB00945C13 /* CarbonDioxideAppTests */,
+				BAC391D525B0D1AB00945C13 /* CarbonDioxideAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAC391B325B0D1AA00945C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC391C525B0D1AB00945C13 /* LaunchScreen.storyboard in Resources */,
+				BAC391C225B0D1AB00945C13 /* Assets.xcassets in Resources */,
+				BAC391C025B0D1AA00945C13 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC391C925B0D1AB00945C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC391D425B0D1AB00945C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAC391B125B0D1AA00945C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC391BD25B0D1AA00945C13 /* ViewController.swift in Sources */,
+				BAC391B925B0D1AA00945C13 /* AppDelegate.swift in Sources */,
+				BAC391BB25B0D1AA00945C13 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC391C725B0D1AB00945C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC391D025B0D1AB00945C13 /* CarbonDioxideAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC391D225B0D1AB00945C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC391DB25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAC391CD25B0D1AB00945C13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAC391B425B0D1AA00945C13 /* CarbonDioxideApp */;
+			targetProxy = BAC391CC25B0D1AB00945C13 /* PBXContainerItemProxy */;
+		};
+		BAC391D825B0D1AB00945C13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAC391B425B0D1AA00945C13 /* CarbonDioxideApp */;
+			targetProxy = BAC391D725B0D1AB00945C13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAC391BE25B0D1AA00945C13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAC391BF25B0D1AA00945C13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAC391C325B0D1AB00945C13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAC391C425B0D1AB00945C13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAC391DD25B0D1AB00945C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAC391DE25B0D1AB00945C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAC391E025B0D1AB00945C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M93K7WB6BB;
+				INFOPLIST_FILE = CarbonDioxideApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = world.aiclub.CarbonDioxideApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAC391E125B0D1AB00945C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M93K7WB6BB;
+				INFOPLIST_FILE = CarbonDioxideApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = world.aiclub.CarbonDioxideApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BAC391E325B0D1AB00945C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M93K7WB6BB;
+				INFOPLIST_FILE = CarbonDioxideAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = world.aiclub.CarbonDioxideAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarbonDioxideApp.app/CarbonDioxideApp";
+			};
+			name = Debug;
+		};
+		BAC391E425B0D1AB00945C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M93K7WB6BB;
+				INFOPLIST_FILE = CarbonDioxideAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = world.aiclub.CarbonDioxideAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarbonDioxideApp.app/CarbonDioxideApp";
+			};
+			name = Release;
+		};
+		BAC391E625B0D1AB00945C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M93K7WB6BB;
+				INFOPLIST_FILE = CarbonDioxideAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = world.aiclub.CarbonDioxideAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarbonDioxideApp;
+			};
+			name = Debug;
+		};
+		BAC391E725B0D1AB00945C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M93K7WB6BB;
+				INFOPLIST_FILE = CarbonDioxideAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = world.aiclub.CarbonDioxideAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarbonDioxideApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAC391B025B0D1AA00945C13 /* Build configuration list for PBXProject "CarbonDioxideApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC391DD25B0D1AB00945C13 /* Debug */,
+				BAC391DE25B0D1AB00945C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC391DF25B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CarbonDioxideApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC391E025B0D1AB00945C13 /* Debug */,
+				BAC391E125B0D1AB00945C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC391E225B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CarbonDioxideAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC391E325B0D1AB00945C13 /* Debug */,
+				BAC391E425B0D1AB00945C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC391E525B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CarbonDioxideAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC391E625B0D1AB00945C13 /* Debug */,
+				BAC391E725B0D1AB00945C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAC391AD25B0D1AA00945C13 /* Project object */;
+}
