@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S41-2U-Fsg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -25,11 +24,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WG-aY-ATM">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="410" id="6hB-4e-Pk5"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="PdD-a0-FnL"/>
-                                            <constraint firstAttribute="height" constant="400" id="SRa-0C-ad3"/>
+                                            <constraint firstAttribute="height" constant="375" id="2YB-B5-yz2"/>
                                         </constraints>
                                         <attributedString key="attributedText">
                                             <fragment content="CO2 Sensor">
@@ -43,18 +40,18 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="No Data Yet....." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E3Q-L4-2Aj" userLabel="TextView">
-                                        <rect key="frame" x="0.0" y="400" width="414" height="250"/>
+                                        <rect key="frame" x="0.0" y="375" width="414" height="235"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="Mso-of-uFt"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="VnK-GR-YLj"/>
+                                            <constraint firstAttribute="height" constant="235" id="lSe-eT-aEI"/>
                                         </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working .... " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEf-Rl-W8I">
-                                        <rect key="frame" x="0.0" y="650" width="414" height="246"/>
+                                        <rect key="frame" x="0.0" y="610" width="414" height="286"/>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="33"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -171,7 +168,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Poe-ko-faD">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="S41-2U-Fsg" sceneMemberID="viewController">
+                <tabBarController id="S41-2U-Fsg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="black_background" id="bLe-R4-3vB">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
