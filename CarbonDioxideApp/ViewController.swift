@@ -16,9 +16,10 @@ class ViewController: UIViewController {
     var use1503 = false
     var use3001 = true
     
-    @IBOutlet weak var topLabel: UILabel!
-    @IBOutlet weak var mainText: UILabel!
+    @IBOutlet weak var mainText: UITextView!
     @IBOutlet weak var lowerLabel: UILabel!
+    
+    @IBOutlet weak var topLabel: UILabel!
     
     
     
