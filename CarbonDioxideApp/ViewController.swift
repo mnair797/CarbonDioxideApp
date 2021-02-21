@@ -35,7 +35,7 @@ extension ViewController: CBCentralManagerDelegate {
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state {
         case .unknown:
-            print("central.state is .unknown")
+            print("central.state is .unknown1")
         case .resetting:
             print("central.state is .resetting")
         case .unsupported:
