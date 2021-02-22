@@ -171,14 +171,17 @@ extension ViewController: CBPeripheralDelegate {
         let cdt = getCurrentDateTime()
         print(getCurrentDateTime(),": 3001 Seeing values: ",c,t,p,h,b,i,a, "with t1 & t2 as",t1,t2)
         let s = String(format:"As of \(cdt)\nCO2 %d ppm\n Temp %.1f F\nPressure %d mbar\nHumidity %d%%\nBattery %d%%",c,t,p,h,b)
+        
+        mainText.text = s
         if (c<700) {
             mainText.textColor = UIColor.green;
         } else if (c>=700 && c<1200) {
-            mainText.textColor = UIColor.yellow;
+            mainText.textColor = UIColor.orange;
+
         } else {
-            mainText.textColor = UIColor.green;
+            mainText.textColor = UIColor.red;
+
         }
-        mainText.text = s
         print (p)
         //mainText.backgroundColor = .gray
         DispatchQueue.main.async {

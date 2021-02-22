@@ -167,22 +167,6 @@
             </objects>
             <point key="canvasLocation" x="784.05797101449286" y="765.40178571428567"/>
         </scene>
-        <!--Settings-->
-        <scene sceneID="Cdg-vJ-wUe">
-            <objects>
-                <viewController id="cAm-es-E5l" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dpp-x6-Hei">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="qUG-ca-twt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="globe" catalog="system" id="hYK-vX-3Py"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5rC-yK-AKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1691" y="811"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Poe-ko-faD">
             <objects>
@@ -200,7 +184,6 @@
                         <segue destination="FHq-Ww-nFe" kind="relationship" relationship="viewControllers" id="VFs-PP-3e1"/>
                         <segue destination="ReY-q0-PLv" kind="relationship" relationship="viewControllers" id="gKd-um-xIk"/>
                         <segue destination="2lL-vJ-41u" kind="relationship" relationship="viewControllers" id="al3-d6-2kT"/>
-                        <segue destination="cAm-es-E5l" kind="relationship" relationship="viewControllers" id="XRV-0V-Z5P"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JhR-nZ-pLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -211,7 +194,6 @@
     <resources>
         <image name="black_background" width="166.5" height="93.5"/>
         <image name="chart.bar" catalog="system" width="128" height="90"/>
-        <image name="globe" catalog="system" width="128" height="121"/>
         <image name="greenbackground" width="250" height="444.5"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="info" catalog="system" width="93" height="128"/>
