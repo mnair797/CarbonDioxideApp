@@ -171,7 +171,15 @@ extension ViewController: CBPeripheralDelegate {
         let cdt = getCurrentDateTime()
         print(getCurrentDateTime(),": 3001 Seeing values: ",c,t,p,h,b,i,a, "with t1 & t2 as",t1,t2)
         let s = String(format:"As of \(cdt)\nCO2 %d ppm\n Temp %.1f F\nPressure %d mbar\nHumidity %d%%\nBattery %d%%",c,t,p,h,b)
+        if (c<700) {
+            mainText.textColor = UIColor.green;
+        } else if (c>=700 && c<1200) {
+            mainText.textColor = UIColor.yellow;
+        } else {
+            mainText.textColor = UIColor.green;
+        }
         mainText.text = s
+        print (p)
         //mainText.backgroundColor = .gray
         DispatchQueue.main.async {
             self.mainText.text = s
@@ -189,10 +197,11 @@ extension ViewController: CBPeripheralDelegate {
         let p = (baToInt(byteArray[4],byteArray[5]) )/10
         let h = baToInt(byteArray[6],0)
         let b = baToInt(byteArray[7],0)
+        
         //let i = baToInt(byteArray[9],byteArray[10])
         //let a = baToInt(byteArray[11],byteArray[12])
         print(getCurrentDateTime(),": 1503 Seeing values: ",c,t,p,h,b, "with t1 & t2 as",t1,t2)
-        GoogleSheetsIntegration.recordSensor(source:"Aranet4",co2:c,timestamp:"Not known 1503", tempF:t, pressure:p, humidity:h,battery:b)
+        GoogleSheetsIntegration.recordSensor(source:"Aranet4",co2:c,timestamp:"Not known 1503", tempF:t, pressure:p, humidity:h, battery: b)
     }
     
     func updateValues() {
