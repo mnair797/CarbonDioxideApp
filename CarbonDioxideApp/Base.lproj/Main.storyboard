@@ -31,10 +31,10 @@
                                         </constraints>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <string key="content">Hello! Here is the data from your CO2 Sensor. If you need help on how to connect a sensor to the app, see the information section</string>
+                                                <string key="content">Hello! Here is the data from your CO2 Sensor. If you need help on how to connect a sensor to the app, see the information section. To see more about the colors of the text, check out the information section.</string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="35" name="Baskerville"/>
+                                                    <font key="NSFont" metaFont="system" size="32"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
