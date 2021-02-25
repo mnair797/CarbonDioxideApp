@@ -177,10 +177,8 @@ extension ViewController: CBPeripheralDelegate {
             mainText.textColor = UIColor.green;
         } else if (c>=700 && c<1200) {
             mainText.textColor = UIColor.orange;
-
         } else {
             mainText.textColor = UIColor.red;
-
         }
         print (p)
         //mainText.backgroundColor = .gray
