@@ -9,6 +9,9 @@ import UIKit
 import CoreBluetooth
 class ViewController: UIViewController {
     
+    let lowerco2bound = 600;
+    let upperco2bound = 1200;
+    
     
     var centralManager: CBCentralManager!
     var co2Peripheral: CBPeripheral!
@@ -156,6 +159,7 @@ extension ViewController: CBPeripheralDelegate {
     }
     
     func handleF0CD3001(byteArray: [UInt8]) {
+        
         //print("F0CD3001 shows byte array:",byteArray)
         let c = baToInt(byteArray[0],byteArray[1])
         let t1 = baToInt(byteArray[2],byteArray[3])
@@ -173,9 +177,10 @@ extension ViewController: CBPeripheralDelegate {
         let s = String(format:"As of \(cdt)\nCO2 %d ppm\n Temp %.1f F\nPressure %d mbar\nHumidity %d%%\nBattery %d%%",c,t,p,h,b)
         
         mainText.text = s
-        if (c<700) {
+        
+        if (c<lowerco2bound) {
             mainText.textColor = UIColor.green;
-        } else if (c>=700 && c<1200) {
+        } else if (c>=lowerco2bound && c<upperco2bound) {
             mainText.textColor = UIColor.orange;
         } else {
             mainText.textColor = UIColor.red;

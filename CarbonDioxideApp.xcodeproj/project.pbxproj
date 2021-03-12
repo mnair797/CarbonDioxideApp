@@ -3,16 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BA2A5D0E25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */; };
 		BA2A5D0F25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */; };
 		BA2A5D1025DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */; };
-		BA2A5D1525DF75330010A155 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D1425DF75330010A155 /* LocationViewController.swift */; };
-		BA2A5D1625DF75330010A155 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D1425DF75330010A155 /* LocationViewController.swift */; };
-		BA2A5D1725DF75330010A155 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D1425DF75330010A155 /* LocationViewController.swift */; };
 		BAC391B925B0D1AA00945C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC391B825B0D1AA00945C13 /* AppDelegate.swift */; };
 		BAC391BB25B0D1AA00945C13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC391BA25B0D1AA00945C13 /* SceneDelegate.swift */; };
 		BAC391BD25B0D1AA00945C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC391BC25B0D1AA00945C13 /* ViewController.swift */; };
@@ -21,6 +18,10 @@
 		BAC391C525B0D1AB00945C13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAC391C325B0D1AB00945C13 /* LaunchScreen.storyboard */; };
 		BAC391D025B0D1AB00945C13 /* CarbonDioxideAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC391CF25B0D1AB00945C13 /* CarbonDioxideAppTests.swift */; };
 		BAC391DB25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC391DA25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift */; };
+		BAD43A4325F9CBA50082AA52 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD43A4225F9CBA50082AA52 /* ChartViewController.swift */; };
+		BAD43A4425F9CBA50082AA52 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD43A4225F9CBA50082AA52 /* ChartViewController.swift */; };
+		BAD43A4525F9CBA50082AA52 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD43A4225F9CBA50082AA52 /* ChartViewController.swift */; };
+		BAD43A4B25F9CFE20082AA52 /* Highcharts in Frameworks */ = {isa = PBXBuildFile; productRef = BAD43A4A25F9CFE20082AA52 /* Highcharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetsIntegration.swift; sourceTree = "<group>"; };
-		BA2A5D1425DF75330010A155 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		BAC391B525B0D1AA00945C13 /* CarbonDioxideApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarbonDioxideApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC391B825B0D1AA00945C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC391BA25B0D1AA00945C13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +57,7 @@
 		BAC391D625B0D1AB00945C13 /* CarbonDioxideAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarbonDioxideAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC391DA25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonDioxideAppUITests.swift; sourceTree = "<group>"; };
 		BAC391DC25B0D1AB00945C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD43A4225F9CBA50082AA52 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD43A4B25F9CFE20082AA52 /* Highcharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,10 +111,10 @@
 			children = (
 				BAC391B825B0D1AA00945C13 /* AppDelegate.swift */,
 				BAC391BA25B0D1AA00945C13 /* SceneDelegate.swift */,
+				BAD43A4225F9CBA50082AA52 /* ChartViewController.swift */,
 				BAC391BC25B0D1AA00945C13 /* ViewController.swift */,
 				BAC391BE25B0D1AA00945C13 /* Main.storyboard */,
 				BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */,
-				BA2A5D1425DF75330010A155 /* LocationViewController.swift */,
 				BAC391C125B0D1AB00945C13 /* Assets.xcassets */,
 				BAC391C325B0D1AB00945C13 /* LaunchScreen.storyboard */,
 				BAC391C625B0D1AB00945C13 /* Info.plist */,
@@ -154,6 +156,9 @@
 			dependencies = (
 			);
 			name = CarbonDioxideApp;
+			packageProductDependencies = (
+				BAD43A4A25F9CFE20082AA52 /* Highcharts */,
+			);
 			productName = CarbonDioxideApp;
 			productReference = BAC391B525B0D1AA00945C13 /* CarbonDioxideApp.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +230,9 @@
 				Base,
 			);
 			mainGroup = BAC391AC25B0D1AA00945C13;
+			packageReferences = (
+				BAD43A4925F9CFE20082AA52 /* XCRemoteSwiftPackageReference "highcharts-ios" */,
+			);
 			productRefGroup = BAC391B625B0D1AA00945C13 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,11 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA2A5D1525DF75330010A155 /* LocationViewController.swift in Sources */,
 				BAC391BD25B0D1AA00945C13 /* ViewController.swift in Sources */,
 				BA2A5D0E25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */,
 				BAC391B925B0D1AA00945C13 /* AppDelegate.swift in Sources */,
 				BAC391BB25B0D1AA00945C13 /* SceneDelegate.swift in Sources */,
+				BAD43A4325F9CBA50082AA52 /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA2A5D1625DF75330010A155 /* LocationViewController.swift in Sources */,
+				BAD43A4425F9CBA50082AA52 /* ChartViewController.swift in Sources */,
 				BAC391D025B0D1AB00945C13 /* CarbonDioxideAppTests.swift in Sources */,
 				BA2A5D0F25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */,
 			);
@@ -290,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA2A5D1725DF75330010A155 /* LocationViewController.swift in Sources */,
+				BAD43A4525F9CBA50082AA52 /* ChartViewController.swift in Sources */,
 				BAC391DB25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift in Sources */,
 				BA2A5D1025DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */,
 			);
@@ -609,6 +617,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BAD43A4925F9CFE20082AA52 /* XCRemoteSwiftPackageReference "highcharts-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/highcharts/highcharts-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BAD43A4A25F9CFE20082AA52 /* Highcharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAD43A4925F9CFE20082AA52 /* XCRemoteSwiftPackageReference "highcharts-ios" */;
+			productName = Highcharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BAC391AD25B0D1AA00945C13 /* Project object */;
 }
