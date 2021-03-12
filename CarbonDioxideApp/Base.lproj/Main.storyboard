@@ -143,6 +143,10 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Graph" image="chart.bar" catalog="system" id="Wcy-0Q-ASo"/>
+                    <connections>
+                        <outlet property="Date1" destination="v6v-6W-qWM" id="5YQ-0e-T2l"/>
+                        <outlet property="Date2" destination="ffn-0J-Yfi" id="rOk-Ri-Bqu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBK-Kc-4SX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
