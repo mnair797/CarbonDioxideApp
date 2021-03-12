@@ -87,7 +87,7 @@
         <!--Graph-->
         <scene sceneID="6N1-3k-d73">
             <objects>
-                <viewController id="FHq-Ww-nFe" sceneMemberID="viewController">
+                <viewController id="FHq-Ww-nFe" customClass="ChartViewController" customModule="CarbonDioxideApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gxk-Fd-iiX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

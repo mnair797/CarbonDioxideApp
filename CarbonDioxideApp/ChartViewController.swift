@@ -11,8 +11,8 @@ import Foundation
 
 class ChartViewController: UIViewController {
     
-    @IBOutlet weak var firstDate: UIDatePicker!
-    @IBOutlet weak var secondDate: UIDatePicker!
+    @IBOutlet weak var Date1: UIDatePicker!
+    @IBOutlet weak var Date2: UIDatePicker!
     @IBOutlet weak var drawButton: UIButton!
     @IBOutlet weak var mainView: UIView!
     
@@ -128,8 +128,8 @@ class ChartViewController: UIViewController {
     
     private func data() -> [Any] {
         let l=GoogleSheetsIntegration.dataset
-        let st=firstDate.date.timeIntervalSince1970
-        let en=secondDate.date.timeIntervalSince1970
+        let st=Date1.date.timeIntervalSince1970
+        let en=Date2.date.timeIntervalSince1970
         let st1000=1000*Int(st)
         let en1000=1000*Int(en)+1000*24*60*60
         print("First:",st,";Second:",en)
@@ -146,8 +146,8 @@ class ChartViewController: UIViewController {
     }
     
     private func annotations() -> [Int:String] {
-        let st=firstDate.date.timeIntervalSince1970
-        let en=secondDate.date.timeIntervalSince1970
+        let st=Date1.date.timeIntervalSince1970
+        let en=Date2.date.timeIntervalSince1970
         let st1000=1000*Int(st)
         let en1000=1000*Int(en)+1000*24*60*60
         print("Annotations: First:",st,";Second:",en)
