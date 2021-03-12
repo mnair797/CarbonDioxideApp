@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  CarbonDioxideApp
 //
-//  Created by Meenakshi Nair on 1/14/21.
+//  Created by Meenakshi Nair on 1/14/21
 //
 
 import UIKit
