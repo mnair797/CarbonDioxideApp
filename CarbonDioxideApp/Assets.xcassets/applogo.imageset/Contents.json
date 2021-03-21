@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "appstore.png",
+      "filename" : "Free_Sample_By_Wix (9).jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "appstore@2x.png",
+      "filename" : "Free_Sample_By_Wix (9)@2x.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "appstore@3x.png",
+      "filename" : "Free_Sample_By_Wix (9)@3x.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

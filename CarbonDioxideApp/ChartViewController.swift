@@ -11,10 +11,16 @@ import Foundation
 
 class ChartViewController: UIViewController {
     
+    
     @IBOutlet weak var Date1: UIDatePicker!
+    
     @IBOutlet weak var Date2: UIDatePicker!
+    
     @IBOutlet weak var drawButton: UIButton!
-    @IBOutlet weak var mainView: UIView!
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+        chartZoomableTime()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,19 +29,8 @@ class ChartViewController: UIViewController {
         //chartZoomableTime()
     }
     
-    @IBAction func firstDatePressed(_ sender: Any) {
-        print("First date chosen")
-    }
     
-    
-    @IBAction func secondDateChosen(_ sender: Any) {
-        print("Second date chosen")
-    }
-    
-    
-    @IBAction func buttonPressed(_ sender: Any) {
-        chartZoomableTime()
-    }
+
     
     func chartZoomableTime() {
         let chartView = HIChartView(frame: view.bounds)

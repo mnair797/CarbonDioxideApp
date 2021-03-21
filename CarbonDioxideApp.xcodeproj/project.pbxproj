@@ -10,6 +10,9 @@
 		BA2A5D0E25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */; };
 		BA2A5D0F25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */; };
 		BA2A5D1025DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */; };
+		BABE74DA2601B0E600188C60 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE74D92601B0E600188C60 /* CameraViewController.swift */; };
+		BABE74DB2601B0E600188C60 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE74D92601B0E600188C60 /* CameraViewController.swift */; };
+		BABE74DC2601B0E600188C60 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE74D92601B0E600188C60 /* CameraViewController.swift */; };
 		BAC391B925B0D1AA00945C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC391B825B0D1AA00945C13 /* AppDelegate.swift */; };
 		BAC391BB25B0D1AA00945C13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC391BA25B0D1AA00945C13 /* SceneDelegate.swift */; };
 		BAC391BD25B0D1AA00945C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC391BC25B0D1AA00945C13 /* ViewController.swift */; };
@@ -43,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetsIntegration.swift; sourceTree = "<group>"; };
+		BABE74D92601B0E600188C60 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		BAC391B525B0D1AA00945C13 /* CarbonDioxideApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarbonDioxideApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC391B825B0D1AA00945C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC391BA25B0D1AA00945C13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 				BAD43A4225F9CBA50082AA52 /* ChartViewController.swift */,
 				BAC391BC25B0D1AA00945C13 /* ViewController.swift */,
 				BAC391BE25B0D1AA00945C13 /* Main.storyboard */,
+				BABE74D92601B0E600188C60 /* CameraViewController.swift */,
 				BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */,
 				BAC391C125B0D1AB00945C13 /* Assets.xcassets */,
 				BAC391C325B0D1AB00945C13 /* LaunchScreen.storyboard */,
@@ -281,6 +286,7 @@
 				BAC391B925B0D1AA00945C13 /* AppDelegate.swift in Sources */,
 				BAC391BB25B0D1AA00945C13 /* SceneDelegate.swift in Sources */,
 				BAD43A4325F9CBA50082AA52 /* ChartViewController.swift in Sources */,
+				BABE74DA2601B0E600188C60 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD43A4425F9CBA50082AA52 /* ChartViewController.swift in Sources */,
+				BABE74DB2601B0E600188C60 /* CameraViewController.swift in Sources */,
 				BAC391D025B0D1AB00945C13 /* CarbonDioxideAppTests.swift in Sources */,
 				BA2A5D0F25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */,
 			);
@@ -299,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD43A4525F9CBA50082AA52 /* ChartViewController.swift in Sources */,
+				BABE74DC2601B0E600188C60 /* CameraViewController.swift in Sources */,
 				BAC391DB25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift in Sources */,
 				BA2A5D1025DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */,
 			);
@@ -463,6 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M93K7WB6BB;
 				INFOPLIST_FILE = CarbonDioxideApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,6 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M93K7WB6BB;
 				INFOPLIST_FILE = CarbonDioxideApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

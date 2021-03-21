@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,22 +22,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7th-dw-oig">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7th-dw-oig">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="876"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WG-aY-ATM">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="410" id="6hB-4e-Pk5"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="A65-Gb-WU7"/>
-                                            <constraint firstAttribute="height" constant="350" id="Chq-Xz-vLe"/>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="375" id="LGk-0K-c83"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WG-aY-ATM">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="292"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="CO2 Sensor">
+                                            <fragment content="CO2 Sensor: If you are having trouble connecting the sensor via Bluetooth see the Information section">
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="35" name="Baskerville"/>
+                                                    <font key="NSFont" size="30" name="Baskerville"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -44,18 +39,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="No Data Yet....." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E3Q-L4-2Aj" userLabel="TextView">
-                                        <rect key="frame" x="0.0" y="350" width="414" height="250"/>
+                                        <rect key="frame" x="0.0" y="292" width="414" height="292"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="Mso-of-uFt"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="VnK-GR-YLj"/>
-                                        </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working .... " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEf-Rl-W8I">
-                                        <rect key="frame" x="0.0" y="600" width="414" height="296"/>
+                                        <rect key="frame" x="0.0" y="584" width="414" height="292"/>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="33"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -67,12 +58,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7th-dw-oig" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CJB-Zu-nqm"/>
+                            <constraint firstAttribute="bottom" secondItem="7th-dw-oig" secondAttribute="bottom" constant="20" id="F7c-Bc-3ke"/>
                             <constraint firstItem="7th-dw-oig" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="P2q-vk-J2h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7th-dw-oig" secondAttribute="trailing" id="Tw8-Gu-1hk"/>
-                            <constraint firstAttribute="bottom" secondItem="7th-dw-oig" secondAttribute="bottom" id="cEE-Zg-KRt"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="1Kd-Pr-lza"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="1Kd-Pr-lza">
+                        <imageReference key="image" image="house" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="lowerLabel" destination="fEf-Rl-W8I" id="gjX-Bp-yIc"/>
                         <outlet property="mainText" destination="E3Q-L4-2Aj" id="e8x-eG-RwG"/>
@@ -92,60 +85,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="464-ky-A6J">
-                                <rect key="frame" x="0.0" y="39" width="488.66666666666669" height="614"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ToM-cE-a3U">
+                                <rect key="frame" x="20" y="44" width="374" height="769"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ToM-cE-a3U">
-                                        <rect key="frame" x="0.0" y="0.0" width="488.66666666666669" height="205"/>
-                                        <subviews>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6v-6W-qWM">
-                                                <rect key="frame" x="0.0" y="30.666666666666671" width="115.66666666666667" height="144"/>
-                                                <date key="date" timeIntervalSinceReferenceDate="629050446.04008198">
-                                                    <!--2020-12-07 16:14:06 +0000-->
-                                                </date>
-                                            </datePicker>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffn-0J-Yfi">
-                                                <rect key="frame" x="159.66666666666666" y="30.666666666666671" width="124.99999999999997" height="144"/>
-                                                <date key="date" timeIntervalSinceReferenceDate="629309633.29666996">
-                                                    <!--2020-12-10 16:13:53 +0000-->
-                                                </date>
-                                            </datePicker>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WY-ar-GCk">
-                                                <rect key="frame" x="284.66666666666669" y="72.666666666666671" width="204" height="60.000000000000014"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="Draw Graph"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <view contentMode="scaleToFill" horizontalHuggingPriority="247" verticalHuggingPriority="248" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="8EI-b5-AGd" customClass="HIChartView">
-                                        <rect key="frame" x="124.33333333333331" y="205" width="240" height="409"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6v-6W-qWM">
+                                        <rect key="frame" x="126.33333333333334" y="0.0" width="121.66666666666666" height="256.33333333333331"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="121.66666666666667" id="FPl-mk-1ck"/>
+                                        </constraints>
+                                        <date key="date" timeIntervalSinceReferenceDate="629050446.04008198">
+                                            <!--2020-12-07 16:14:06 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffn-0J-Yfi">
+                                        <rect key="frame" x="124.66666666666666" y="256.33333333333337" width="125" height="256.33333333333337"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="629309633.29666996">
+                                            <!--2020-12-10 16:13:53 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WY-ar-GCk">
+                                        <rect key="frame" x="115" y="512.66666666666663" width="144" height="256.33333333333337"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Draw Graph"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="FHq-Ww-nFe" eventType="touchUpInside" id="msE-b5-sLW"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="8EI-b5-AGd" firstAttribute="leading" secondItem="464-ky-A6J" secondAttribute="leading" constant="124.33333333333331" id="eLn-et-lld"/>
-                                    <constraint firstItem="8EI-b5-AGd" firstAttribute="top" secondItem="464-ky-A6J" secondAttribute="top" constant="205" id="p2f-Oj-7hH"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IL8-lL-NAg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IL8-lL-NAg" firstAttribute="bottom" secondItem="464-ky-A6J" secondAttribute="bottom" constant="160" id="cjL-Ew-8Cf"/>
-                            <constraint firstItem="464-ky-A6J" firstAttribute="top" secondItem="gxk-Fd-iiX" secondAttribute="topMargin" constant="-5" id="snl-gT-O67"/>
-                            <constraint firstItem="464-ky-A6J" firstAttribute="leading" secondItem="IL8-lL-NAg" secondAttribute="leading" id="xX6-ju-YCF"/>
+                            <constraint firstItem="ToM-cE-a3U" firstAttribute="leading" secondItem="gxk-Fd-iiX" secondAttribute="leadingMargin" id="46K-cF-QIF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ToM-cE-a3U" secondAttribute="trailing" id="Y5E-QO-H2k"/>
+                            <constraint firstItem="ToM-cE-a3U" firstAttribute="top" secondItem="gxk-Fd-iiX" secondAttribute="topMargin" id="cDc-so-vV1"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ToM-cE-a3U" secondAttribute="bottom" id="veQ-3r-6kS"/>
                         </constraints>
-                        <connections>
-                            <outlet property="Date1" destination="v6v-6W-qWM" id="GRD-Ju-jQa"/>
-                            <outlet property="Date2" destination="ffn-0J-Yfi" id="t7d-LJ-v5I"/>
-                            <outlet property="DrawButton" destination="0WY-ar-GCk" id="GX2-I7-52M"/>
-                            <outlet property="MainView" destination="8EI-b5-AGd" id="bHp-Ld-d9W"/>
-                        </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Graph" image="chart.bar" catalog="system" id="Wcy-0Q-ASo"/>
+                    <tabBarItem key="tabBarItem" title="Graph" id="Wcy-0Q-ASo">
+                        <imageReference key="image" image="chart.bar" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                     <connections>
-                        <outlet property="Date1" destination="v6v-6W-qWM" id="5YQ-0e-T2l"/>
-                        <outlet property="Date2" destination="ffn-0J-Yfi" id="rOk-Ri-Bqu"/>
+                        <outlet property="Date1" destination="v6v-6W-qWM" id="lcZ-2H-rn2"/>
+                        <outlet property="Date2" destination="ffn-0J-Yfi" id="ooz-KM-nPH"/>
+                        <outlet property="drawButton" destination="0WY-ar-GCk" id="zQ5-Ec-xxy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBK-Kc-4SX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -155,7 +139,7 @@
         <!--Self Upload-->
         <scene sceneID="CBj-ej-V90">
             <objects>
-                <viewController id="ReY-q0-PLv" sceneMemberID="viewController">
+                <viewController id="ReY-q0-PLv" customClass="CameraViewController" customModule="CarbonDioxideApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9GK-16-OcM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,18 +148,47 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQC-d3-DLz">
-                                <rect key="frame" x="138" y="384" width="56" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rQ4-tu-zYe">
+                                <rect key="frame" x="0.0" y="22" width="414" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VVi-3d-DT8">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ZC-LL-4sM">
+                                        <rect key="frame" x="0.0" y="284" width="414" height="284"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Waiting for you to click take picture">
+                                                <attributes>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="36" name="Baskerville"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdr-qf-eMl">
+                                        <rect key="frame" x="0.0" y="568" width="414" height="284"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                        <state key="normal" title="Take Picture"/>
+                                        <connections>
+                                            <action selector="btnTakePicture:" destination="ReY-q0-PLv" eventType="touchUpInside" id="PCU-w4-lGG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DMc-LP-F3P"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Self Upload" image="square.and.arrow.up" catalog="system" id="aN4-Gs-weN"/>
+                    <tabBarItem key="tabBarItem" title="Self Upload" id="aN4-Gs-weN">
+                        <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="imageView" destination="VVi-3d-DT8" id="3I6-kJ-OWH"/>
+                        <outlet property="textView" destination="1ZC-LL-4sM" id="M4l-pB-OPn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMz-9e-6I9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -197,7 +210,9 @@
                         <viewLayoutGuide key="safeArea" id="bPx-uv-pnj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Information" image="info" catalog="system" id="BBL-sP-eXQ"/>
+                    <tabBarItem key="tabBarItem" title="Information" id="BBL-sP-eXQ">
+                        <imageReference key="image" image="info" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I9I-zC-zca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +223,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="S41-2U-Fsg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="black_background" id="bLe-R4-3vB">
+                    <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="black_background" id="bLe-R4-3vB">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
