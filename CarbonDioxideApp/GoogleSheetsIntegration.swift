@@ -22,6 +22,8 @@ class GoogleSheetsIntegration {
     
     @IBOutlet weak var MainView: UIView!
     
+    static let MAX_RECORDS_TO_PROCESS=16000;
+    
     static let collectionName = "CO2TestV01"
     static let feedbackRecordType="Feedback"
     static let co2sensorRecordType="SensorCO2"
@@ -135,7 +137,7 @@ class GoogleSheetsIntegration {
         for record in records {
             //print(record)
             i = i+1
-            if(i>1500) {
+            if(i>MAX_RECORDS_TO_PROCESS) {
                 break
             }
             let r = record as! [String:Any]
@@ -157,13 +159,16 @@ class GoogleSheetsIntegration {
             //print(i,":RT=",rType,"CO2=",co2level,"Time=",timeV, "and", tv," from ",r)
         }
         //print("Records are",records)
+        DataStore.setSheetData(valueArray: dataset)
         print("Dataset:",dataset)
-        print("Saw",recordCount,"records")
+        print("Saw",recordCount,"records, while dataset has",dataset.count)
         
     }
     
     static func getSheet() {
         debugPrint("Google Sheet integration: Step 1")
+        dataset=DataStore.getSheetData() as? [[Int]] ?? []
+        debugPrint("Google Sheet integration: Step 1a. Dataset size=",dataset.count)
         let url = URL(string: uploadURL)
         guard url != nil else {
             print("Error creating URL: ",uploadURL)
