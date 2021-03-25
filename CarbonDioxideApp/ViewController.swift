@@ -29,6 +29,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        DataStore.dumpAllKeys()
+        if let s=DataStore.getAranetScreen() {
+            mainText.text=s
+        }
         centralManager = CBCentralManager(delegate: self, queue: nil)
     }
     
@@ -189,6 +193,7 @@ extension ViewController: CBPeripheralDelegate {
         //mainText.backgroundColor = .gray
         DispatchQueue.main.async {
             self.mainText.text = s
+            DataStore.setAranetScreen(valueStr: s)
         }
         GoogleSheetsIntegration.recordSensor(source:"Aranet4",co2:c,timestamp:cdt, tempF:t, pressure:p, humidity:h,battery:b)
         
