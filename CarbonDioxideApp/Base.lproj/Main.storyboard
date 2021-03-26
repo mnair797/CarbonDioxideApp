@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" fixedFrame="YES" image="greenbackground" translatesAutoresizingMaskIntoConstraints="NO" id="fXX-q2-Iqd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" fixedFrame="YES" image="testbackground6" translatesAutoresizingMaskIntoConstraints="NO" id="fXX-q2-Iqd">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -85,26 +85,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ToM-cE-a3U">
-                                <rect key="frame" x="20" y="44" width="374" height="769"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greenbackground" translatesAutoresizingMaskIntoConstraints="NO" id="6RI-Mh-it2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ToM-cE-a3U">
+                                <rect key="frame" x="0.0" y="44" width="394" height="769"/>
                                 <subviews>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6v-6W-qWM">
-                                        <rect key="frame" x="126.33333333333334" y="0.0" width="121.66666666666666" height="256.33333333333331"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="121.66666666666667" id="FPl-mk-1ck"/>
-                                        </constraints>
+                                        <rect key="frame" x="136.33333333333334" y="0.0" width="121.66666666666666" height="256.33333333333331"/>
                                         <date key="date" timeIntervalSinceReferenceDate="629050446.04008198">
                                             <!--2020-12-07 16:14:06 +0000-->
                                         </date>
                                     </datePicker>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffn-0J-Yfi">
-                                        <rect key="frame" x="124.66666666666666" y="256.33333333333337" width="125" height="256.33333333333337"/>
+                                        <rect key="frame" x="134.66666666666666" y="256.33333333333337" width="124.99999999999997" height="256.33333333333337"/>
                                         <date key="date" timeIntervalSinceReferenceDate="629309633.29666996">
                                             <!--2020-12-10 16:13:53 +0000-->
                                         </date>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WY-ar-GCk">
-                                        <rect key="frame" x="115" y="512.66666666666663" width="144" height="256.33333333333337"/>
+                                        <rect key="frame" x="125" y="512.66666666666663" width="144" height="256.33333333333337"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" title="Draw Graph"/>
                                         <connections>
@@ -117,10 +117,13 @@
                         <viewLayoutGuide key="safeArea" id="IL8-lL-NAg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ToM-cE-a3U" firstAttribute="leading" secondItem="gxk-Fd-iiX" secondAttribute="leadingMargin" id="46K-cF-QIF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ToM-cE-a3U" secondAttribute="trailing" id="Y5E-QO-H2k"/>
-                            <constraint firstItem="ToM-cE-a3U" firstAttribute="top" secondItem="gxk-Fd-iiX" secondAttribute="topMargin" id="cDc-so-vV1"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="ToM-cE-a3U" secondAttribute="bottom" id="veQ-3r-6kS"/>
+                            <constraint firstItem="ToM-cE-a3U" firstAttribute="bottom" secondItem="IL8-lL-NAg" secondAttribute="bottom" id="1Cv-Og-EM0"/>
+                            <constraint firstItem="ToM-cE-a3U" firstAttribute="leading" secondItem="IL8-lL-NAg" secondAttribute="leading" id="700-ik-tEG"/>
+                            <constraint firstItem="ToM-cE-a3U" firstAttribute="trailing" secondItem="gxk-Fd-iiX" secondAttribute="trailingMargin" id="Avk-Yg-lqV"/>
+                            <constraint firstItem="ToM-cE-a3U" firstAttribute="leading" secondItem="6RI-Mh-it2" secondAttribute="leading" id="CD3-MI-JrC"/>
+                            <constraint firstAttribute="bottom" secondItem="6RI-Mh-it2" secondAttribute="bottom" id="KGK-Yo-DyE"/>
+                            <constraint firstAttribute="trailing" secondItem="6RI-Mh-it2" secondAttribute="trailing" id="egX-Kf-90r"/>
+                            <constraint firstItem="ToM-cE-a3U" firstAttribute="top" secondItem="IL8-lL-NAg" secondAttribute="top" id="gje-Sf-7g0"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Graph" id="Wcy-0Q-ASo">
@@ -144,7 +147,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenbackground" translatesAutoresizingMaskIntoConstraints="NO" id="X3Q-VE-yr3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundtest_4" translatesAutoresizingMaskIntoConstraints="NO" id="X3Q-VE-yr3">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rQ4-tu-zYe">
@@ -264,12 +267,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backgroundtest_4" width="248" height="464"/>
         <image name="black_background" width="166.66667175292969" height="93.666664123535156"/>
         <image name="chart.bar" catalog="system" width="128" height="90"/>
         <image name="greenbackground" width="250" height="444.66665649414062"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="info" catalog="system" width="93" height="128"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="testbackground6" width="500" height="500"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
