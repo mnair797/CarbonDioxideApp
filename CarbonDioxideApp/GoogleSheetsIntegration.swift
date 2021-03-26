@@ -154,7 +154,7 @@ class GoogleSheetsIntegration {
         }
         //print("Records are",records)
         DataStore.setSheetData(valueArray: dataset)
-        print("Dataset:",dataset)
+        //print("Dataset:",dataset)
         print("Saw",recordCount,"records, while dataset has",dataset.count)
         
     }
