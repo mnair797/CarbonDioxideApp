@@ -144,18 +144,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greenbackground" translatesAutoresizingMaskIntoConstraints="NO" id="X3Q-VE-yr3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenbackground" translatesAutoresizingMaskIntoConstraints="NO" id="X3Q-VE-yr3">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rQ4-tu-zYe">
-                                <rect key="frame" x="0.0" y="22" width="414" height="852"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rQ4-tu-zYe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VVi-3d-DT8">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="284"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="298.66666666666669"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ZC-LL-4sM">
-                                        <rect key="frame" x="0.0" y="284" width="414" height="284"/>
+                                        <rect key="frame" x="0.0" y="298.66666666666663" width="414" height="298.66666666666663"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Waiting for you to click take picture">
@@ -169,7 +168,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdr-qf-eMl">
-                                        <rect key="frame" x="0.0" y="568" width="414" height="284"/>
+                                        <rect key="frame" x="0.0" y="597.33333333333337" width="414" height="298.66666666666663"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                         <state key="normal" title="Take Picture"/>
                                         <connections>
@@ -181,6 +180,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DMc-LP-F3P"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rQ4-tu-zYe" firstAttribute="trailing" secondItem="DMc-LP-F3P" secondAttribute="trailing" id="9dF-JT-7cK"/>
+                            <constraint firstAttribute="bottom" secondItem="X3Q-VE-yr3" secondAttribute="bottom" id="WC5-iP-AWO"/>
+                            <constraint firstItem="rQ4-tu-zYe" firstAttribute="top" secondItem="9GK-16-OcM" secondAttribute="top" id="bh2-Il-sUM"/>
+                            <constraint firstItem="rQ4-tu-zYe" firstAttribute="leading" secondItem="DMc-LP-F3P" secondAttribute="leading" id="oBE-eS-Zma"/>
+                            <constraint firstAttribute="trailing" secondItem="X3Q-VE-yr3" secondAttribute="trailing" id="tEB-z9-kF7"/>
+                            <constraint firstAttribute="bottom" secondItem="rQ4-tu-zYe" secondAttribute="bottom" id="tje-pP-wqU"/>
+                            <constraint firstItem="X3Q-VE-yr3" firstAttribute="top" secondItem="9GK-16-OcM" secondAttribute="top" id="wk9-gB-KNx"/>
+                            <constraint firstItem="X3Q-VE-yr3" firstAttribute="leading" secondItem="9GK-16-OcM" secondAttribute="leading" id="yef-iB-2PB"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Self Upload" id="aN4-Gs-weN">
                         <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="default"/>
@@ -197,7 +206,7 @@
         <!--Information-->
         <scene sceneID="c0m-oi-wnt">
             <objects>
-                <viewController id="2lL-vJ-41u" sceneMemberID="viewController">
+                <viewController id="2lL-vJ-41u" customClass="WebPageViewController" customModule="CarbonDioxideApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vc0-du-lZu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,6 +215,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xK7-Yu-EXB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bPx-uv-pnj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -213,6 +231,9 @@
                     <tabBarItem key="tabBarItem" title="Information" id="BBL-sP-eXQ">
                         <imageReference key="image" image="info" catalog="system" symbolScale="default"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="webView" destination="xK7-Yu-EXB" id="kgk-cl-phY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I9I-zC-zca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -65,7 +65,8 @@ class CameraViewController: UIViewController, VNDocumentCameraViewControllerDele
             if(i.contains(".")) { // Floating point - Temperature
                 tempReading=Double(i) ?? 0.0
             } else {
-                let j=Int(i) ?? 0
+                let i2=i.components(separatedBy: .whitespacesAndNewlines).joined() // Remove spaces
+                let j=Int(i2) ?? 0
                 if(j>=co2limit) {
                     co2level = j
                 } else if(j>=humidityLimit){
@@ -97,7 +98,7 @@ class CameraViewController: UIViewController, VNDocumentCameraViewControllerDele
             GoogleSheetsIntegration.recordSensor(source:"Photo",co2:self.co2level,timestamp:cdt, tempF:Float(self.tempReading), pressure:0, humidity:self.humidityReading,battery:0)
             
             DispatchQueue.main.async {
-                self.textView.text = detectedText
+                self.textView.text = s
                 
                 self.textView.flashScrollIndicators()
 

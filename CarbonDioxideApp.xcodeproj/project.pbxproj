@@ -11,6 +11,12 @@
 		BA2A5D0E25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */; };
 		BA2A5D0F25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */; };
 		BA2A5D1025DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */; };
+		BA99D479260D88A100F874B5 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99D478260D88A000F874B5 /* WebPageViewController.swift */; };
+		BA99D47A260D88A100F874B5 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99D478260D88A000F874B5 /* WebPageViewController.swift */; };
+		BA99D47B260D88A100F874B5 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99D478260D88A000F874B5 /* WebPageViewController.swift */; };
+		BA99D489260D8A6A00F874B5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99D488260D8A6A00F874B5 /* LocationManager.swift */; };
+		BA99D48A260D8A6A00F874B5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99D488260D8A6A00F874B5 /* LocationManager.swift */; };
+		BA99D48B260D8A6A00F874B5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99D488260D8A6A00F874B5 /* LocationManager.swift */; };
 		BABE74DA2601B0E600188C60 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE74D92601B0E600188C60 /* CameraViewController.swift */; };
 		BABE74DB2601B0E600188C60 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE74D92601B0E600188C60 /* CameraViewController.swift */; };
 		BABE74DC2601B0E600188C60 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE74D92601B0E600188C60 /* CameraViewController.swift */; };
@@ -48,6 +54,8 @@
 /* Begin PBXFileReference section */
 		AA2D0AF2260C56EB00C55859 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetsIntegration.swift; sourceTree = "<group>"; };
+		BA99D478260D88A000F874B5 /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
+		BA99D488260D8A6A00F874B5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BABE74D92601B0E600188C60 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		BAC391B525B0D1AA00945C13 /* CarbonDioxideApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarbonDioxideApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC391B825B0D1AA00945C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,10 +130,12 @@
 				BAC391BE25B0D1AA00945C13 /* Main.storyboard */,
 				BABE74D92601B0E600188C60 /* CameraViewController.swift */,
 				BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */,
+				BA99D488260D8A6A00F874B5 /* LocationManager.swift */,
 				BAC391C125B0D1AB00945C13 /* Assets.xcassets */,
 				BAC391C325B0D1AB00945C13 /* LaunchScreen.storyboard */,
 				BAC391C625B0D1AB00945C13 /* Info.plist */,
 				AA2D0AF2260C56EB00C55859 /* DataStore.swift */,
+				BA99D478260D88A000F874B5 /* WebPageViewController.swift */,
 			);
 			path = CarbonDioxideApp;
 			sourceTree = "<group>";
@@ -285,12 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA2D0AF3260C56EB00C55859 /* DataStore.swift in Sources */,
+				BA99D479260D88A100F874B5 /* WebPageViewController.swift in Sources */,
 				BAC391BD25B0D1AA00945C13 /* ViewController.swift in Sources */,
 				BA2A5D0E25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */,
 				BAC391B925B0D1AA00945C13 /* AppDelegate.swift in Sources */,
 				BAC391BB25B0D1AA00945C13 /* SceneDelegate.swift in Sources */,
 				BAD43A4325F9CBA50082AA52 /* ChartViewController.swift in Sources */,
 				BABE74DA2601B0E600188C60 /* CameraViewController.swift in Sources */,
+				BA99D489260D8A6A00F874B5 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD43A4425F9CBA50082AA52 /* ChartViewController.swift in Sources */,
+				BA99D47A260D88A100F874B5 /* WebPageViewController.swift in Sources */,
+				BA99D48A260D8A6A00F874B5 /* LocationManager.swift in Sources */,
 				BABE74DB2601B0E600188C60 /* CameraViewController.swift in Sources */,
 				BAC391D025B0D1AB00945C13 /* CarbonDioxideAppTests.swift in Sources */,
 				BA2A5D0F25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */,
@@ -310,6 +324,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD43A4525F9CBA50082AA52 /* ChartViewController.swift in Sources */,
+				BA99D47B260D88A100F874B5 /* WebPageViewController.swift in Sources */,
+				BA99D48B260D8A6A00F874B5 /* LocationManager.swift in Sources */,
 				BABE74DC2601B0E600188C60 /* CameraViewController.swift in Sources */,
 				BAC391DB25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift in Sources */,
 				BA2A5D1025DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */,
@@ -473,7 +489,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U4WHYADYH2;
+				DEVELOPMENT_TEAM = M93K7WB6BB;
 				INFOPLIST_FILE = CarbonDioxideApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,7 +509,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U4WHYADYH2;
+				DEVELOPMENT_TEAM = M93K7WB6BB;
 				INFOPLIST_FILE = CarbonDioxideApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
