@@ -11,7 +11,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var locationManager : LocationManager! = LocationManager()
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         do {
@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Finished sleep for ",s)
                     
         }
+        locationManager.initializeLocation()
         return true
     }
 

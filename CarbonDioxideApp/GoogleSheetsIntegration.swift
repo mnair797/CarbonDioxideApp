@@ -13,14 +13,7 @@ import UIKit
 //import Alamofire
 class GoogleSheetsIntegration {
     
-    
-    @IBOutlet weak var Date1: UIDatePicker!
-    
-    @IBOutlet weak var Date2: UIDatePicker!
-    
-    @IBOutlet weak var DrawButton: UIButton!
-    
-    @IBOutlet weak var MainView: UIView!
+   
     
     static let MAX_RECORDS_TO_PROCESS=16000;
     
@@ -63,6 +56,7 @@ class GoogleSheetsIntegration {
         dataArray.append(0)
         dataArray.append(uuid)
         dataArray.append("XXX_YYY_ZZZ")
+        dataArray.append(LocationManager.currentLocation?.coordinate.latitude ?? 0); dataArray.append(LocationManager.currentLocation?.coordinate.longitude ?? 0)
         dataArray = dataArray + passedData
         let da1 = [dataArray]
         //let da2 = JSON(da1)
