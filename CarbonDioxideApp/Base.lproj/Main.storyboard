@@ -85,7 +85,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="greenbackground" translatesAutoresizingMaskIntoConstraints="NO" id="6RI-Mh-it2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenbackground" translatesAutoresizingMaskIntoConstraints="NO" id="6RI-Mh-it2">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ToM-cE-a3U">
@@ -120,10 +120,11 @@
                             <constraint firstItem="ToM-cE-a3U" firstAttribute="bottom" secondItem="IL8-lL-NAg" secondAttribute="bottom" id="1Cv-Og-EM0"/>
                             <constraint firstItem="ToM-cE-a3U" firstAttribute="leading" secondItem="IL8-lL-NAg" secondAttribute="leading" id="700-ik-tEG"/>
                             <constraint firstItem="ToM-cE-a3U" firstAttribute="trailing" secondItem="gxk-Fd-iiX" secondAttribute="trailingMargin" id="Avk-Yg-lqV"/>
-                            <constraint firstItem="ToM-cE-a3U" firstAttribute="leading" secondItem="6RI-Mh-it2" secondAttribute="leading" id="CD3-MI-JrC"/>
-                            <constraint firstAttribute="bottom" secondItem="6RI-Mh-it2" secondAttribute="bottom" id="KGK-Yo-DyE"/>
-                            <constraint firstAttribute="trailing" secondItem="6RI-Mh-it2" secondAttribute="trailing" id="egX-Kf-90r"/>
+                            <constraint firstItem="6RI-Mh-it2" firstAttribute="centerX" secondItem="gxk-Fd-iiX" secondAttribute="centerX" id="CfH-fz-wye"/>
+                            <constraint firstItem="6RI-Mh-it2" firstAttribute="centerY" secondItem="gxk-Fd-iiX" secondAttribute="centerY" id="YY0-K8-dzf"/>
                             <constraint firstItem="ToM-cE-a3U" firstAttribute="top" secondItem="IL8-lL-NAg" secondAttribute="top" id="gje-Sf-7g0"/>
+                            <constraint firstItem="6RI-Mh-it2" firstAttribute="leading" secondItem="ToM-cE-a3U" secondAttribute="leading" id="oYF-gS-EXO"/>
+                            <constraint firstItem="6RI-Mh-it2" firstAttribute="top" secondItem="gxk-Fd-iiX" secondAttribute="topMargin" constant="-44" id="sVd-Mg-LQZ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Graph" id="Wcy-0Q-ASo">
