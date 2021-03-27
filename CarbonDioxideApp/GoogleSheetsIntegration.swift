@@ -50,13 +50,12 @@ class GoogleSheetsIntegration {
     static func addToGoogleSheet(passedData:[Encodable], recordType:String) {
         var dataArray=[Encodable]()
         let dateStr = getCurrentDateTime()
-        dataArray.append(dateStr)
-        dataArray.append(recordType)
-        dataArray.append(0)
-        dataArray.append(0)
-        dataArray.append(uuid)
-        dataArray.append("XXX_YYY_ZZZ")
-        dataArray.append(LocationManager.currentLocation?.coordinate.latitude ?? 0); dataArray.append(LocationManager.currentLocation?.coordinate.longitude ?? 0)
+        dataArray.append(dateStr) // Time
+        dataArray.append(recordType) // Record Type
+        dataArray.append(LocationManager.currentLocation?.coordinate.latitude ?? 0) //Lat
+        dataArray.append(LocationManager.currentLocation?.coordinate.longitude ?? 0) //Long
+        dataArray.append(uuid) //Device ID
+        dataArray.append("XXX_YYY_ZZZ") //Delimiter
         dataArray = dataArray + passedData
         let da1 = [dataArray]
         //let da2 = JSON(da1)
