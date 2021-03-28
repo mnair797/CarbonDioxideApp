@@ -91,20 +91,42 @@
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ToM-cE-a3U">
                                 <rect key="frame" x="0.0" y="44" width="394" height="769"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJa-5R-sLG">
+                                        <rect key="frame" x="93" y="0.0" width="208" height="153.66666666666666"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Start Date">
+                                                <attributes>
+                                                    <font key="NSFont" size="50" name="Baskerville"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6v-6W-qWM">
-                                        <rect key="frame" x="136.33333333333334" y="0.0" width="121.66666666666666" height="256.33333333333331"/>
+                                        <rect key="frame" x="136.33333333333334" y="153.66666666666666" width="121.66666666666666" height="153.99999999999997"/>
                                         <date key="date" timeIntervalSinceReferenceDate="629050446.04008198">
                                             <!--2020-12-07 16:14:06 +0000-->
                                         </date>
                                     </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1X-HJ-L2H">
+                                        <rect key="frame" x="100" y="307.66666666666669" width="194" height="153.66666666666669"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="End Date">
+                                                <attributes>
+                                                    <font key="NSFont" size="50" name="Baskerville"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffn-0J-Yfi">
-                                        <rect key="frame" x="134.66666666666666" y="256.33333333333337" width="124.99999999999997" height="256.33333333333337"/>
+                                        <rect key="frame" x="134.66666666666666" y="461.33333333333326" width="124.99999999999997" height="154"/>
                                         <date key="date" timeIntervalSinceReferenceDate="629309633.29666996">
                                             <!--2020-12-10 16:13:53 +0000-->
                                         </date>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0WY-ar-GCk">
-                                        <rect key="frame" x="125" y="512.66666666666663" width="144" height="256.33333333333337"/>
+                                        <rect key="frame" x="125" y="615.33333333333337" width="144" height="153.66666666666663"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" title="Draw Graph"/>
                                         <connections>
