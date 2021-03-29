@@ -250,7 +250,7 @@
                         <viewLayoutGuide key="safeArea" id="SKT-EV-679"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="info" catalog="system" id="dJy-h4-h8y"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info" catalog="system" id="dJy-h4-h8y"/>
                     <connections>
                         <outlet property="webView" destination="QWp-D4-1p8" id="PcP-5l-d3u"/>
                     </connections>
