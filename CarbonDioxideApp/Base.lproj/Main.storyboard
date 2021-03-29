@@ -230,19 +230,15 @@
             <point key="canvasLocation" x="-584.05797101449275" y="693.75"/>
         </scene>
         <!--Information-->
-        <scene sceneID="c0m-oi-wnt">
+        <scene sceneID="w69-9c-Fth">
             <objects>
-                <viewController id="2lL-vJ-41u" customClass="WebPageViewController" customModule="CarbonDioxideApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vc0-du-lZu">
+                <viewController title="Information" id="ixp-tL-fbl" customClass="WebPageViewController" customModule="CarbonDioxideApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="21C-52-yEi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greenbackground" translatesAutoresizingMaskIntoConstraints="NO" id="tZp-Na-4fz">
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QWp-D4-1p8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xK7-Yu-EXB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -251,19 +247,127 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="bPx-uv-pnj"/>
+                        <viewLayoutGuide key="safeArea" id="SKT-EV-679"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Information" id="BBL-sP-eXQ">
-                        <imageReference key="image" image="info" catalog="system" symbolScale="default"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Item" image="info" catalog="system" id="dJy-h4-h8y"/>
                     <connections>
-                        <outlet property="webView" destination="xK7-Yu-EXB" id="kgk-cl-phY"/>
+                        <outlet property="webView" destination="QWp-D4-1p8" id="PcP-5l-d3u"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I9I-zC-zca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olT-qO-Fdz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="784.05797101449286" y="765.40178571428567"/>
+            <point key="canvasLocation" x="502.89855072463774" y="778.79464285714278"/>
+        </scene>
+        <!--User Input-->
+        <scene sceneID="jXT-Qi-Lz0">
+            <objects>
+                <viewController id="xtX-If-VZ7" customClass="UserInputViewController" customModule="CarbonDioxideApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VU9-jj-U1r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hG9-aY-qe3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0Gd-hd-X1z">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="201.66666666666666"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CO2 level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9u-YP-h5x">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="201.66666666666666"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fin-71-Lgo">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="201.66666666666666"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Enter the Carbon dioxide level">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" metaFont="system" size="29"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0Gt-hG-YKl">
+                                        <rect key="frame" x="0.0" y="231.66666666666663" width="414" height="201.33333333333337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ei-3e-O5V">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="201.33333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0H-LO-E7j">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="201.33333333333334"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Enter the Temperature level">
+                                                        <attributes>
+                                                            <color key="NSColor" systemColor="labelColor"/>
+                                                            <font key="NSFont" metaFont="system" size="29"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iuU-8E-euF">
+                                        <rect key="frame" x="0.0" y="463.00000000000006" width="414" height="201.66666666666669"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGj-Kg-kuz">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="201.66666666666666"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H9f-Ya-3Rl">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="201.66666666666666"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Enter the Humidity level">
+                                                        <attributes>
+                                                            <color key="NSColor" systemColor="labelColor"/>
+                                                            <font key="NSFont" metaFont="system" size="29"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bks-vf-5Ia">
+                                        <rect key="frame" x="0.0" y="694.66666666666663" width="414" height="201.33333333333337"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Submit"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gOI-yp-N0P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hG9-aY-qe3" secondAttribute="bottom" id="4og-8M-i8M"/>
+                            <constraint firstAttribute="trailing" secondItem="hG9-aY-qe3" secondAttribute="trailing" id="4tG-9t-utR"/>
+                            <constraint firstItem="hG9-aY-qe3" firstAttribute="leading" secondItem="gOI-yp-N0P" secondAttribute="leading" id="ebd-rS-dVP"/>
+                            <constraint firstItem="hG9-aY-qe3" firstAttribute="top" secondItem="VU9-jj-U1r" secondAttribute="top" id="oRc-7P-2LW"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="User Input" image="pencil" catalog="system" id="A6y-Ag-MyD"/>
+                    <connections>
+                        <outlet property="co2Reading" destination="Fin-71-Lgo" id="qkE-3h-19i"/>
+                        <outlet property="humidityReading" destination="H9f-Ya-3Rl" id="Ufs-sa-PUC"/>
+                        <outlet property="tempReading" destination="h0H-LO-E7j" id="aEq-Gk-KBM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZ8-Fw-pcq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="787"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Poe-ko-faD">
@@ -281,7 +385,8 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="DC4-wr-xTC"/>
                         <segue destination="FHq-Ww-nFe" kind="relationship" relationship="viewControllers" id="VFs-PP-3e1"/>
                         <segue destination="ReY-q0-PLv" kind="relationship" relationship="viewControllers" id="gKd-um-xIk"/>
-                        <segue destination="2lL-vJ-41u" kind="relationship" relationship="viewControllers" id="al3-d6-2kT"/>
+                        <segue destination="xtX-If-VZ7" kind="relationship" relationship="viewControllers" id="UoA-C2-TgC"/>
+                        <segue destination="ixp-tL-fbl" kind="relationship" relationship="viewControllers" id="pDV-q1-7wo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JhR-nZ-pLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -296,6 +401,7 @@
         <image name="greenbackground" width="250" height="444.66665649414062"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="info" catalog="system" width="93" height="128"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="testbackground6" width="500" height="500"/>
         <systemColor name="labelColor">

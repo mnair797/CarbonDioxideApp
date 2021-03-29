@@ -9,8 +9,8 @@ import WebKit
 
 class WebPageViewController: UIViewController,WKNavigationDelegate {
 
-    @IBOutlet weak var webView: WKWebView!
     
+    @IBOutlet weak var webView: WKWebView!
     var pageUrl="https://docs.google.com/document/d/1vv5bLGjSRPM_qMjMzX7SCWdbuMkG-miZvM1-A-sSBSc/edit?usp=sharing"
     
     override func viewDidLoad() {

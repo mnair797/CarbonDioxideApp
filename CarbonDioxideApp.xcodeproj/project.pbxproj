@@ -11,6 +11,9 @@
 		BA2A5D0E25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */; };
 		BA2A5D0F25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */; };
 		BA2A5D1025DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */; };
+		BA351CBB2612342400E3A21E /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA351CBA2612342400E3A21E /* UserInputViewController.swift */; };
+		BA351CBC2612342400E3A21E /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA351CBA2612342400E3A21E /* UserInputViewController.swift */; };
+		BA351CBD2612342400E3A21E /* UserInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA351CBA2612342400E3A21E /* UserInputViewController.swift */; };
 		BA99D479260D88A100F874B5 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99D478260D88A000F874B5 /* WebPageViewController.swift */; };
 		BA99D47A260D88A100F874B5 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99D478260D88A000F874B5 /* WebPageViewController.swift */; };
 		BA99D47B260D88A100F874B5 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA99D478260D88A000F874B5 /* WebPageViewController.swift */; };
@@ -54,6 +57,7 @@
 /* Begin PBXFileReference section */
 		AA2D0AF2260C56EB00C55859 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetsIntegration.swift; sourceTree = "<group>"; };
+		BA351CBA2612342400E3A21E /* UserInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewController.swift; sourceTree = "<group>"; };
 		BA99D478260D88A000F874B5 /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
 		BA99D488260D8A6A00F874B5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BABE74D92601B0E600188C60 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				BAD43A4225F9CBA50082AA52 /* ChartViewController.swift */,
 				BAC391BC25B0D1AA00945C13 /* ViewController.swift */,
 				BAC391BE25B0D1AA00945C13 /* Main.storyboard */,
+				BA351CBA2612342400E3A21E /* UserInputViewController.swift */,
 				BABE74D92601B0E600188C60 /* CameraViewController.swift */,
 				BA2A5D0D25DF75130010A155 /* GoogleSheetsIntegration.swift */,
 				BA99D488260D8A6A00F874B5 /* LocationManager.swift */,
@@ -298,6 +303,7 @@
 				BA99D479260D88A100F874B5 /* WebPageViewController.swift in Sources */,
 				BAC391BD25B0D1AA00945C13 /* ViewController.swift in Sources */,
 				BA2A5D0E25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */,
+				BA351CBB2612342400E3A21E /* UserInputViewController.swift in Sources */,
 				BAC391B925B0D1AA00945C13 /* AppDelegate.swift in Sources */,
 				BAC391BB25B0D1AA00945C13 /* SceneDelegate.swift in Sources */,
 				BAD43A4325F9CBA50082AA52 /* ChartViewController.swift in Sources */,
@@ -315,6 +321,7 @@
 				BA99D48A260D8A6A00F874B5 /* LocationManager.swift in Sources */,
 				BABE74DB2601B0E600188C60 /* CameraViewController.swift in Sources */,
 				BAC391D025B0D1AB00945C13 /* CarbonDioxideAppTests.swift in Sources */,
+				BA351CBC2612342400E3A21E /* UserInputViewController.swift in Sources */,
 				BA2A5D0F25DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +335,7 @@
 				BA99D48B260D8A6A00F874B5 /* LocationManager.swift in Sources */,
 				BABE74DC2601B0E600188C60 /* CameraViewController.swift in Sources */,
 				BAC391DB25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift in Sources */,
+				BA351CBD2612342400E3A21E /* UserInputViewController.swift in Sources */,
 				BA2A5D1025DF75130010A155 /* GoogleSheetsIntegration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ class GoogleSheetsIntegration {
     
    
     
-    static let MAX_RECORDS_TO_PROCESS=16000;
+    static let MAX_RECORDS_TO_PROCESS=1600000;
     
     static let collectionName = "CO2TestV01"
     static let feedbackRecordType="Feedback"
