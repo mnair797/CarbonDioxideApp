@@ -229,10 +229,10 @@
             </objects>
             <point key="canvasLocation" x="-584.05797101449275" y="693.75"/>
         </scene>
-        <!--Information-->
+        <!--Info-->
         <scene sceneID="w69-9c-Fth">
             <objects>
-                <viewController title="Information" id="ixp-tL-fbl" customClass="WebPageViewController" customModule="CarbonDioxideApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Info" id="ixp-tL-fbl" customClass="WebPageViewController" customModule="CarbonDioxideApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="21C-52-yEi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -267,20 +267,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="purple_background" translatesAutoresizingMaskIntoConstraints="NO" id="feM-ix-jAA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hG9-aY-qe3">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="856"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0Gd-hd-X1z">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="201.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="191.66666666666666"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CO2 level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9u-YP-h5x">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="201.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="191.66666666666666"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fin-71-Lgo">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="201.66666666666666"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="191.66666666666666"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Enter the Carbon dioxide level">
                                                         <attributes>
@@ -295,16 +299,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0Gt-hG-YKl">
-                                        <rect key="frame" x="0.0" y="231.66666666666663" width="414" height="201.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="221.66666666666663" width="414" height="191.33333333333337"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ei-3e-O5V">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="201.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="191.33333333333334"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0H-LO-E7j">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="201.33333333333334"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="191.33333333333334"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Enter the Temperature level">
                                                         <attributes>
@@ -319,16 +323,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iuU-8E-euF">
-                                        <rect key="frame" x="0.0" y="463.00000000000006" width="414" height="201.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="443.00000000000006" width="414" height="191.66666666666669"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGj-Kg-kuz">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="201.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="191.66666666666666"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H9f-Ya-3Rl">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="201.66666666666666"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="191.66666666666666"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Enter the Humidity level">
                                                         <attributes>
@@ -342,7 +346,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bks-vf-5Ia">
-                                        <rect key="frame" x="0.0" y="694.66666666666663" width="414" height="201.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="664.66666666666663" width="414" height="191.33333333333337"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Submit"/>
                                     </button>
@@ -352,8 +356,8 @@
                         <viewLayoutGuide key="safeArea" id="gOI-yp-N0P"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="hG9-aY-qe3" secondAttribute="bottom" id="4og-8M-i8M"/>
                             <constraint firstAttribute="trailing" secondItem="hG9-aY-qe3" secondAttribute="trailing" id="4tG-9t-utR"/>
+                            <constraint firstAttribute="bottom" secondItem="hG9-aY-qe3" secondAttribute="bottom" constant="40" id="Lpd-A7-mQI"/>
                             <constraint firstItem="hG9-aY-qe3" firstAttribute="leading" secondItem="gOI-yp-N0P" secondAttribute="leading" id="ebd-rS-dVP"/>
                             <constraint firstItem="hG9-aY-qe3" firstAttribute="top" secondItem="VU9-jj-U1r" secondAttribute="top" id="oRc-7P-2LW"/>
                         </constraints>
@@ -367,7 +371,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZ8-Fw-pcq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1802" y="787"/>
+            <point key="canvasLocation" x="1801.449275362319" y="786.83035714285711"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Poe-ko-faD">
@@ -402,6 +406,7 @@
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="info" catalog="system" width="93" height="128"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="purple_background" width="94" height="133"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="testbackground6" width="500" height="500"/>
         <systemColor name="labelColor">
