@@ -22,6 +22,7 @@ class UserInputViewController: UIViewController {
         getStoredReadings()
         print("At program start, the values are:",co2Reading.text,
               tempReading.text,humidityReading.text)
+        
     }
 
     func getStoredReadings() {
@@ -34,6 +35,8 @@ class UserInputViewController: UIViewController {
         DataStore.setCO2(valueInt: valueCO2)
         DataStore.setTemperature(valueFloat: valueTemp)
         DataStore.setHumidity(valueInt: valueHumidity)
+        
+        GoogleSheetsIntegration.recordUserInput(co2:co2Reading,timestamp:GoogleSheetsIntegration.getCurrentDateTime(), tempF:valueTemp, pressure:0, humidity:humidityReading)
     }
     
     @IBAction func submitPressed(_ sender: Any) {

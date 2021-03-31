@@ -43,6 +43,12 @@ class GoogleSheetsIntegration {
         addToGoogleSheet(passedData: [source,co2,tempF,pressure,humidity,battery,timestamp], recordType: co2sensorRecordType)
     }
     
+    static func recordUserInput(co2:Int,timestamp:String, tempF:Float, pressure:Int, humidity:Int) {
+       let source="UserInput"
+       let battery=0
+       addToGoogleSheet(passedData: [source,co2,tempF,pressure,humidity,battery,timestamp], recordType: co2sensorRecordType)
+    }
+    
     static func recordFeedback(_ s: String) {
         addToGoogleSheet(passedData: [s], recordType: feedbackRecordType)
     }
@@ -157,6 +163,7 @@ class GoogleSheetsIntegration {
         print("Saw",recordCount,"records, while dataset has",dataset.count)
         
     }
+    
     
     static func getSheet() {
         debugPrint("Google Sheet integration: Step 1")
