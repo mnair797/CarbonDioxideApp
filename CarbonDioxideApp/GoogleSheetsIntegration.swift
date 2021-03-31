@@ -15,7 +15,7 @@ class GoogleSheetsIntegration {
     
    
     
-    static let MAX_RECORDS_TO_PROCESS=16000;
+    static let MAX_RECORDS_TO_PROCESS=1600000;
     
     static let collectionName = "CO2TestV01"
     static let feedbackRecordType="Feedback"
@@ -43,6 +43,12 @@ class GoogleSheetsIntegration {
         addToGoogleSheet(passedData: [source,co2,tempF,pressure,humidity,battery,timestamp], recordType: co2sensorRecordType)
     }
     
+    static func recordUserInput(co2:Int,timestamp:String, tempF:Float, pressure:Int, humidity:Int) {
+       let source="UserInput"
+       let battery=0
+       addToGoogleSheet(passedData: [source,co2,tempF,pressure,humidity,battery,timestamp], recordType: co2sensorRecordType)
+    }
+    
     static func recordFeedback(_ s: String) {
         addToGoogleSheet(passedData: [s], recordType: feedbackRecordType)
     }
@@ -50,13 +56,12 @@ class GoogleSheetsIntegration {
     static func addToGoogleSheet(passedData:[Encodable], recordType:String) {
         var dataArray=[Encodable]()
         let dateStr = getCurrentDateTime()
-        dataArray.append(dateStr)
-        dataArray.append(recordType)
-        dataArray.append(0)
-        dataArray.append(0)
-        dataArray.append(uuid)
-        dataArray.append("XXX_YYY_ZZZ")
-        dataArray.append(LocationManager.currentLocation?.coordinate.latitude ?? 0); dataArray.append(LocationManager.currentLocation?.coordinate.longitude ?? 0)
+        dataArray.append(dateStr) // Time
+        dataArray.append(recordType) // Record Type
+        dataArray.append(LocationManager.currentLocation?.coordinate.latitude ?? 0) //Lat
+        dataArray.append(LocationManager.currentLocation?.coordinate.longitude ?? 0) //Long
+        dataArray.append(uuid) //Device ID
+        dataArray.append("XXX_YYY_ZZZ") //Delimiter
         dataArray = dataArray + passedData
         let da1 = [dataArray]
         //let da2 = JSON(da1)
@@ -158,6 +163,7 @@ class GoogleSheetsIntegration {
         print("Saw",recordCount,"records, while dataset has",dataset.count)
         
     }
+    
     
     static func getSheet() {
         debugPrint("Google Sheet integration: Step 1")

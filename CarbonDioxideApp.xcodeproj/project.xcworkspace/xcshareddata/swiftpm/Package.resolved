@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Highcharts",
+        "repositoryURL": "https://github.com/highcharts/highcharts-ios",
+        "state": {
+          "branch": null,
+          "revision": "10c35d5eb15e74d2987b461f3ee06282828f408a",
+          "version": "9.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

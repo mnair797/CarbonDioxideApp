@@ -42,13 +42,12 @@ class LocationManager: NSObject,CLLocationManagerDelegate {
         
 
         
-        print("user latitude = \(userLocation.coordinate.latitude)")
-        print("user longitude = \(userLocation.coordinate.longitude)")
+        
         LocationManager.currentLocation=CLLocation(latitude: userLocation.coordinate.latitude, longitude: userLocation.coordinate.longitude)
         // Call stopUpdatingLocation() to stop listening for location updates,
         // other wise this function will be called every time when user location changes.
         
-       manager.stopUpdatingLocation()
+       //manager.stopUpdatingLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
