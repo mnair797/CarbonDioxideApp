@@ -36,7 +36,9 @@ class UserInputViewController: UIViewController {
         DataStore.setTemperature(valueFloat: valueTemp)
         DataStore.setHumidity(valueInt: valueHumidity)
         
-        GoogleSheetsIntegration.recordUserInput(co2:co2Reading,timestamp:GoogleSheetsIntegration.getCurrentDateTime(), tempF:valueTemp, pressure:0, humidity:humidityReading)
+        GoogleSheetsIntegration.recordUserInput(co2:valueCO2,timestamp:GoogleSheetsIntegration.getCurrentDateTime(), tempF:valueTemp, pressure:0, humidity:valueHumidity)
+
+
     }
     
     @IBAction func submitPressed(_ sender: Any) {
@@ -48,6 +50,7 @@ class UserInputViewController: UIViewController {
         print("Submit pressed")
         print("CO2=",c,"ppm. Temp=",t,"F. Humidity=",h,"%")
     }
+   
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
           view.endEditing(true)

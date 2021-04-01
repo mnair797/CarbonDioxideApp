@@ -349,6 +349,9 @@
                                         <rect key="frame" x="0.0" y="634.66666666666663" width="414" height="181.33333333333337"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitPressed:" destination="xtX-If-VZ7" eventType="touchUpInside" id="qRS-Gk-ffg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

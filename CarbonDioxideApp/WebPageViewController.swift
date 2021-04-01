@@ -16,7 +16,7 @@ class WebPageViewController: UIViewController,WKNavigationDelegate {
     override func viewDidLoad() {
          
         pageUrl="https://tinyurl.com/FAQ-aerosols"
-        pageUrl="https://sites.google.com/view/teammdsco2senseitake1/home"
+        pageUrl="https://www.co2sensei.com"
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         webView.navigationDelegate = self
