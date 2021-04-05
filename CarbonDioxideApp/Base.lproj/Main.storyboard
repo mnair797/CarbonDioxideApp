@@ -13,7 +13,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CarbonDioxideApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CO2_Sensei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,7 +80,7 @@
         <!--Graph-->
         <scene sceneID="6N1-3k-d73">
             <objects>
-                <viewController id="FHq-Ww-nFe" customClass="ChartViewController" customModule="CarbonDioxideApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FHq-Ww-nFe" customClass="ChartViewController" customModule="CO2_Sensei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gxk-Fd-iiX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +165,7 @@
         <!--Self Upload-->
         <scene sceneID="CBj-ej-V90">
             <objects>
-                <viewController id="ReY-q0-PLv" customClass="CameraViewController" customModule="CarbonDioxideApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ReY-q0-PLv" customClass="CameraViewController" customModule="CO2_Sensei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9GK-16-OcM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,7 +232,7 @@
         <!--Info-->
         <scene sceneID="w69-9c-Fth">
             <objects>
-                <viewController title="Info" id="ixp-tL-fbl" customClass="WebPageViewController" customModule="CarbonDioxideApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Info" id="ixp-tL-fbl" customClass="WebPageViewController" customModule="CO2_Sensei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="21C-52-yEi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,7 +262,7 @@
         <!--User Input-->
         <scene sceneID="jXT-Qi-Lz0">
             <objects>
-                <viewController id="xtX-If-VZ7" customClass="UserInputViewController" customModule="CarbonDioxideApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xtX-If-VZ7" customClass="UserInputViewController" customModule="CO2_Sensei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VU9-jj-U1r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

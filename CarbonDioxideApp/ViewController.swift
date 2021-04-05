@@ -9,8 +9,8 @@ import UIKit
 import CoreBluetooth
 class ViewController: UIViewController {
     
-    let lowerco2bound = 800;
-    let upperco2bound = 1400;
+    let lowerco2bound = 600;
+    let upperco2bound = 1100;
     
     
     var centralManager: CBCentralManager!

@@ -61,7 +61,7 @@
 		BA99D478260D88A000F874B5 /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
 		BA99D488260D8A6A00F874B5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BABE74D92601B0E600188C60 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		BAC391B525B0D1AA00945C13 /* CarbonDioxideApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarbonDioxideApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC391B525B0D1AA00945C13 /* CO2 Sensei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CO2 Sensei.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC391B825B0D1AA00945C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAC391BA25B0D1AA00945C13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BAC391BC25B0D1AA00945C13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,10 +69,10 @@
 		BAC391C125B0D1AB00945C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAC391C425B0D1AB00945C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAC391C625B0D1AB00945C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAC391CB25B0D1AB00945C13 /* CarbonDioxideAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarbonDioxideAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC391CB25B0D1AB00945C13 /* CO2 SenseiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CO2 SenseiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC391CF25B0D1AB00945C13 /* CarbonDioxideAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonDioxideAppTests.swift; sourceTree = "<group>"; };
 		BAC391D125B0D1AB00945C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAC391D625B0D1AB00945C13 /* CarbonDioxideAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarbonDioxideAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC391D625B0D1AB00945C13 /* CO2 SenseiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CO2 SenseiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC391DA25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonDioxideAppUITests.swift; sourceTree = "<group>"; };
 		BAC391DC25B0D1AB00945C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAD43A4225F9CBA50082AA52 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
@@ -117,9 +117,9 @@
 		BAC391B625B0D1AA00945C13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BAC391B525B0D1AA00945C13 /* CarbonDioxideApp.app */,
-				BAC391CB25B0D1AB00945C13 /* CarbonDioxideAppTests.xctest */,
-				BAC391D625B0D1AB00945C13 /* CarbonDioxideAppUITests.xctest */,
+				BAC391B525B0D1AA00945C13 /* CO2 Sensei.app */,
+				BAC391CB25B0D1AB00945C13 /* CO2 SenseiTests.xctest */,
+				BAC391D625B0D1AB00945C13 /* CO2 SenseiUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BAC391B425B0D1AA00945C13 /* CarbonDioxideApp */ = {
+		BAC391B425B0D1AA00945C13 /* CO2 Sensei */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAC391DF25B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CarbonDioxideApp" */;
+			buildConfigurationList = BAC391DF25B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CO2 Sensei" */;
 			buildPhases = (
 				BAC391B125B0D1AA00945C13 /* Sources */,
 				BAC391B225B0D1AA00945C13 /* Frameworks */,
@@ -178,17 +178,17 @@
 			);
 			dependencies = (
 			);
-			name = CarbonDioxideApp;
+			name = "CO2 Sensei";
 			packageProductDependencies = (
 				BAD43A4A25F9CFE20082AA52 /* Highcharts */,
 			);
 			productName = CarbonDioxideApp;
-			productReference = BAC391B525B0D1AA00945C13 /* CarbonDioxideApp.app */;
+			productReference = BAC391B525B0D1AA00945C13 /* CO2 Sensei.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BAC391CA25B0D1AB00945C13 /* CarbonDioxideAppTests */ = {
+		BAC391CA25B0D1AB00945C13 /* CO2 SenseiTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAC391E225B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CarbonDioxideAppTests" */;
+			buildConfigurationList = BAC391E225B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CO2 SenseiTests" */;
 			buildPhases = (
 				BAC391C725B0D1AB00945C13 /* Sources */,
 				BAC391C825B0D1AB00945C13 /* Frameworks */,
@@ -199,14 +199,14 @@
 			dependencies = (
 				BAC391CD25B0D1AB00945C13 /* PBXTargetDependency */,
 			);
-			name = CarbonDioxideAppTests;
+			name = "CO2 SenseiTests";
 			productName = CarbonDioxideAppTests;
-			productReference = BAC391CB25B0D1AB00945C13 /* CarbonDioxideAppTests.xctest */;
+			productReference = BAC391CB25B0D1AB00945C13 /* CO2 SenseiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BAC391D525B0D1AB00945C13 /* CarbonDioxideAppUITests */ = {
+		BAC391D525B0D1AB00945C13 /* CO2 SenseiUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAC391E525B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CarbonDioxideAppUITests" */;
+			buildConfigurationList = BAC391E525B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CO2 SenseiUITests" */;
 			buildPhases = (
 				BAC391D225B0D1AB00945C13 /* Sources */,
 				BAC391D325B0D1AB00945C13 /* Frameworks */,
@@ -217,9 +217,9 @@
 			dependencies = (
 				BAC391D825B0D1AB00945C13 /* PBXTargetDependency */,
 			);
-			name = CarbonDioxideAppUITests;
+			name = "CO2 SenseiUITests";
 			productName = CarbonDioxideAppUITests;
-			productReference = BAC391D625B0D1AB00945C13 /* CarbonDioxideAppUITests.xctest */;
+			productReference = BAC391D625B0D1AB00945C13 /* CO2 SenseiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -244,7 +244,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BAC391B025B0D1AA00945C13 /* Build configuration list for PBXProject "CarbonDioxideApp" */;
+			buildConfigurationList = BAC391B025B0D1AA00945C13 /* Build configuration list for PBXProject "CO2 Sensei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -260,9 +260,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BAC391B425B0D1AA00945C13 /* CarbonDioxideApp */,
-				BAC391CA25B0D1AB00945C13 /* CarbonDioxideAppTests */,
-				BAC391D525B0D1AB00945C13 /* CarbonDioxideAppUITests */,
+				BAC391B425B0D1AA00945C13 /* CO2 Sensei */,
+				BAC391CA25B0D1AB00945C13 /* CO2 SenseiTests */,
+				BAC391D525B0D1AB00945C13 /* CO2 SenseiUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -345,12 +345,12 @@
 /* Begin PBXTargetDependency section */
 		BAC391CD25B0D1AB00945C13 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BAC391B425B0D1AA00945C13 /* CarbonDioxideApp */;
+			target = BAC391B425B0D1AA00945C13 /* CO2 Sensei */;
 			targetProxy = BAC391CC25B0D1AB00945C13 /* PBXContainerItemProxy */;
 		};
 		BAC391D825B0D1AB00945C13 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BAC391B425B0D1AA00945C13 /* CarbonDioxideApp */;
+			target = BAC391B425B0D1AA00945C13 /* CO2 Sensei */;
 			targetProxy = BAC391D725B0D1AB00945C13 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -549,7 +549,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarbonDioxideApp.app/CarbonDioxideApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CO2 Sensei.app/CO2 Sensei";
 			};
 			name = Debug;
 		};
@@ -571,7 +571,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarbonDioxideApp.app/CarbonDioxideApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CO2 Sensei.app/CO2 Sensei";
 			};
 			name = Release;
 		};
@@ -618,7 +618,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BAC391B025B0D1AA00945C13 /* Build configuration list for PBXProject "CarbonDioxideApp" */ = {
+		BAC391B025B0D1AA00945C13 /* Build configuration list for PBXProject "CO2 Sensei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BAC391DD25B0D1AB00945C13 /* Debug */,
@@ -627,7 +627,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BAC391DF25B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CarbonDioxideApp" */ = {
+		BAC391DF25B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CO2 Sensei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BAC391E025B0D1AB00945C13 /* Debug */,
@@ -636,7 +636,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BAC391E225B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CarbonDioxideAppTests" */ = {
+		BAC391E225B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CO2 SenseiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BAC391E325B0D1AB00945C13 /* Debug */,
@@ -645,7 +645,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BAC391E525B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CarbonDioxideAppUITests" */ = {
+		BAC391E525B0D1AB00945C13 /* Build configuration list for PBXNativeTarget "CO2 SenseiUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BAC391E625B0D1AB00945C13 /* Debug */,
