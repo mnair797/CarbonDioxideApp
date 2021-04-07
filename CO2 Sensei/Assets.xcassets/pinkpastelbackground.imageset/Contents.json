@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "purple_background.jpeg",
+      "filename" : "pinkpastelbackground.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "purple_background@2x.jpeg",
+      "filename" : "pinkpastelbackground@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "purple_background@3x.jpeg",
+      "filename" : "pinkpastelbackground@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

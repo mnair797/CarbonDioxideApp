@@ -107,9 +107,9 @@
 		BAC391AC25B0D1AA00945C13 = {
 			isa = PBXGroup;
 			children = (
-				BAC391B725B0D1AA00945C13 /* CarbonDioxideApp */,
-				BAC391CE25B0D1AB00945C13 /* CarbonDioxideAppTests */,
-				BAC391D925B0D1AB00945C13 /* CarbonDioxideAppUITests */,
+				BAC391B725B0D1AA00945C13 /* CO2 Sensei */,
+				BAC391CE25B0D1AB00945C13 /* CO2 Sensei Tests */,
+				BAC391D925B0D1AB00945C13 /* CO2 Sensei AppUITests */,
 				BAC391B625B0D1AA00945C13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BAC391B725B0D1AA00945C13 /* CarbonDioxideApp */ = {
+		BAC391B725B0D1AA00945C13 /* CO2 Sensei */ = {
 			isa = PBXGroup;
 			children = (
 				BAC391B825B0D1AA00945C13 /* AppDelegate.swift */,
@@ -142,25 +142,25 @@
 				AA2D0AF2260C56EB00C55859 /* DataStore.swift */,
 				BA99D478260D88A000F874B5 /* WebPageViewController.swift */,
 			);
-			path = CarbonDioxideApp;
+			path = "CO2 Sensei";
 			sourceTree = "<group>";
 		};
-		BAC391CE25B0D1AB00945C13 /* CarbonDioxideAppTests */ = {
+		BAC391CE25B0D1AB00945C13 /* CO2 Sensei Tests */ = {
 			isa = PBXGroup;
 			children = (
 				BAC391CF25B0D1AB00945C13 /* CarbonDioxideAppTests.swift */,
 				BAC391D125B0D1AB00945C13 /* Info.plist */,
 			);
-			path = CarbonDioxideAppTests;
+			path = "CO2 Sensei Tests";
 			sourceTree = "<group>";
 		};
-		BAC391D925B0D1AB00945C13 /* CarbonDioxideAppUITests */ = {
+		BAC391D925B0D1AB00945C13 /* CO2 Sensei AppUITests */ = {
 			isa = PBXGroup;
 			children = (
 				BAC391DA25B0D1AB00945C13 /* CarbonDioxideAppUITests.swift */,
 				BAC391DC25B0D1AB00945C13 /* Info.plist */,
 			);
-			path = CarbonDioxideAppUITests;
+			path = "CO2 Sensei AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

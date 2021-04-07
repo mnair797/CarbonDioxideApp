@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "backgroundtest_4.jpeg",
+      "filename" : "turqoisebackground2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "backgroundtest_4@2x.jpeg",
+      "filename" : "turqoisebackground2@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "backgroundtest_4@3x.jpeg",
+      "filename" : "turqoisebackground2@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
